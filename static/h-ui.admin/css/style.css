@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* 你自己的样式 */
+address,caption, cite,code,dfn,em,strong,th,var,i{font-style:normal;font-weight:normal;}
+@font-face {
+  font-family: 'iconfont';  /* project id 1052838 */
+  src: url('//at.alicdn.com/t/font_1052838_w7a381jssa.eot');
+  src: url('//at.alicdn.com/t/font_1052838_w7a381jssa.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1052838_w7a381jssa.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1052838_w7a381jssa.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1052838_w7a381jssa.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1052838_w7a381jssa.svg#iconfont') format('svg');
+}
+.img_has .layui-table-cell{
+  height: 50px;
+  line-height: 50px;
+}
+.Hui-iconfont,
+.layui-icon {
+  font-style:normal!important;
+}
+.layui-table-tool-self {
+  display: none!important;
+}
+.iconFont {
+  font-style:normal!important;
+  font-family:"iconFont" !important;
+  color: #a1a1a1;
+  font-size:16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+.icon_referee:before { content: "\e60e"; }
+.icon_order:before { content: "\e645"; }
+.icon_referees:before { content: "\e60f"; }
+.icon_question:before { content: "\e626"; }
+.icon_questions:before { content: "\e612"; }
+.icon_evaluation:before { content: "\e607"; }
+.icon_money:before { content: "\e618"; }
+.icon_shop:before { content: "\e666"; }
+.icon_address:before { content: "\e647"; }
+.icon_banks:before { content: "\e7ca"; }
+.icon_bank:before { content: "\e95f"; }
+.icon_increment:before { content: "\e610"; }
+.icon_recharge:before { content: "\e634"; }
+.icon_coupons:before { content: "\e604"; }
+.icon_coupon:before { content: "\e603"; }
+.icon_news:before { content: "\e65c"; }
+.icon_increment:before { content: "\e610"; }
+.icon_address:before { content: "\e647"; }
+.icon_account:before { content: "\e600"; }
+.icon_user:before { content: "\e65e"; }
+.icon_parameter:before { content: "\e6a0"; }
+.icon_role:before { content: "\e63f"; }
+.icon_demand:before { content: "\e67d"; }
+.icon_label:before { content: "\e6b2"; }
+.icon_area:before { content: "\e635"; }
+.icon_area:before { content: "\e635"; }
+.icon_img:before { content: "\e665"; }
+.icon_service_side:before { content: "\e605"; }
+table a {
+  text-decoration: none!important;
+}
+.Hui-aside .menu_dropdown dd li{
+  line-height: 32px!important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.input-text[type="number"] {
+  width: 100%;
+}
+.up_img {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.up_img_btn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.up_img_hint {
+  line-height: 30px;
+  color: #999;
+  font-size: 14px;
+}
+.login_label {
+  margin-top: 3px;
+  cursor: text;
+  text-align: right;
+  display: block;
+  color: #555;
+}
+.mb {
+  margin-bottom: 20px;
+}
+.layui-upload-img {
+  margin: 0 20px 0 0;
+}
+.login_label .Hui-iconfont{
+  font-size: 24px;
+}
+.category_title {
+  padding: 0;
+  text-align: right!important;
+}
+.layui-form.searchs {
+  text-align: center;
+}
+.search_case {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.search_case em {
+  width: 73%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+}
+.searchTime input {
+  width: 30%;
+}
+.searchTime em {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9%;
+  text-align: center;
+}
+i{font-style: oblique!important;}
+
+.xiug{width:100px;padding:9px 0;}

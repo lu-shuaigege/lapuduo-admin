@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta name="format-detection" content="telephone=no">
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="lib/html5shiv.js"></script>
+  <script type="text/javascript" src="lib/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css"/>
+  <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css"/>
+  <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css"/>
+  <link rel="stylesheet" type="text/css" href="lib/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin"/>
+  <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css"/>
+  <!--[if IE 6]>
+  <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js"></script>
+  <script>DD_belatedPNG.fix('*');</script>
+  <![endif]-->
+  <title>小程序提现列表</title>
+</head>
+<body>
+<nav class="breadcrumb">
+  <i class="Hui-iconfont">&#xe67f;</i> 首页
+  <span class="c-gray en">&gt;</span> 财务管理
+  <span class="c-gray en">&gt;</span> 小程序提现列表
+  <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px"
+     href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div class="page-container">
+  <div class="layui-form">
+    <div class="layui-inline">
+      时间范围：
+      <div class="layui-inline">
+        <input type="text" class="layui-input" id="time" placeholder=" - ">
+      </div>
+    </div>
+    <div class="layui-inline">
+      提现人姓名：
+      <div class="layui-inline">
+        <input class="layui-input" name="name" id="name" autocomplete="off">
+      </div>
+    </div>
+    <div class="layui-inline">
+      是否审核：
+      <div class="layui-inline">
+        <select name="isAudit" id="isAudit">
+          <option value="2">全部</option>
+          <option value="0">未审核</option>
+          <option value="1">已审核</option>
+        </select>
+      </div>
+    </div>
+    <button class="layui-btn" id="search" data-type="reload">搜索</button>
+  </div>
+  <table id="xcxCashList" lay-filter="xcxCashList"></table>
+</div>
+<script type="text/html" id="auditing">
+  {{# if (d.status=== 1) { }}  
+  <a class="layui-btn layui-btn-sm" lay-event="auditing">审核</a>
+  {{# } }}  
+</script>
+<script type="text/html" id="status">
+  {{# if (d.status=== 1) { }}  
+  申请中
+  {{# } else if(d.status=== 2) { }}  
+  成功
+  {{# } else if(d.status=== 3) { }}  
+  失败
+  {{# } }}  
+</script>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script>
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/layui/layui.all.js"></script>
+<script type="text/javascript" src="lib/jquery.cookie.js"></script>
+<script type="text/javascript" src="static/CJLT/common.js"></script>
+<script type="text/javascript" src="static/CJLT/xcxCashList.js"></script>
+</body>
+</html>
